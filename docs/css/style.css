@@ -385,6 +385,16 @@ template {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   border: none;
   outline: none;
@@ -1048,4 +1058,93 @@ section:not(.hero-section) {
 
 .remove-like:hover {
   opacity: 1;
+}
+
+.model {
+  padding-top: 150px !important;
+}
+
+.model__flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.model__img {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.model__img-small {
+  max-height: 784px;
+  overflow-y: hidden;
+  max-width: 130px;
+  flex: 0 0 100%;
+}
+
+.model__img-big {
+  flex: 0 0 100%;
+  max-width: 540px;
+}
+
+.model__info {
+  margin-left: 40px;
+}
+
+.model__info h1 {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: start;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.model__info ul {
+  margin: 30px 0 40px 0;
+}
+
+.model__info ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #242424;
+}
+
+.model__info ul li span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #242424;
+  margin-left: 70px;
+}
+
+.model__content {
+  margin-bottom: 40px;
+}
+
+.model__content p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #242424;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  margin-right: 10px;
 }

@@ -10,3 +10,10 @@ const swiper = new Swiper(".slider", {
   slidesPerView: "auto",
   loop: true,
 });
+
+const modelSlider = new Swiper(".model__img-small", {
+  wrapperClass: "model__img-wrapper",
+  slideClass: "model__img-slide",
+  direction:"vertical",
+  slidesPerView: "auto",
+});

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "product" })
+  <body>
+    @@include('html/header.html')
+    <main class="main">
+      <section class="model">
+        <div class="container">
+          <div class="model__flex">
+            <div class="model__img">
+              <div class="model__img-small">
+                <div class="model__img-wrapper">
+                  <div class="model__img-slide">
+                    <img src="@img/model1.png" alt="" />
+                  </div>
+                  <div class="model__img-slide">
+                    <img src="@img/model2.png" alt="" />
+                  </div>
+                  <div class="model__img-slide">
+                    <img src="@img/model3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="model__img-big">
+                <img src="@img/model1.png" alt="" />
+              </div>
+            </div>
+            <div class="model__info">
+              <h1>Dress “Amalia”</h1>
+              <ul>
+                <li>Collection<span>Divine</span></li>
+              </ul>
+              <div class="model__content">
+                <p>Наряды в греческом стиле — это не классика, но что-то к ней близкое, ведь богини Олимпа точно знали, что идет женщинам. Такие платья зрительно увеличивают грудь, вытягивают силуэт, смотрятся одновременно нежно и роскошно. Они подходят беременным девушкам, а также не препятствуют веселым танцам на свадьбе.</p>
+              </div>
+              <button class="btn"><img src="@img/addLike.svg" alt="">Add to favorites</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -2,7 +2,6 @@ import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import rename from "gulp-rename";
 import cleanCss from "gulp-clean-css";
-import webpCss from "gulp-webpcss";
 import autoPrefixer from "gulp-autoprefixer";
 import gulpGroupCssMediaQueries from "gulp-group-css-media-queries";
 
@@ -26,12 +25,7 @@ export const scss = () => {
       })
     )
     .pipe(gulpGroupCssMediaQueries())
-    .pipe(
-      webpCss({
-        webpClass: ".webp",
-        noWebpClass: ".no-webp",
-      })
-    )
+
     .pipe(
       autoPrefixer({
         grid: true,
